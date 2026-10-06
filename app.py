@@ -25,7 +25,8 @@ def load_model(model_path):
     return YOLO(model_path)
 
 try:
-    model = load_model("plantdoc_clean_best.pt")
+    # Updated path to match repository structure
+    model = load_model("models/disease_classifier_v2/weights/best.pt")
     st.sidebar.success("✅ Model loaded successfully!")
 except Exception as e:
     st.sidebar.error(f"❌ Error loading model file: {e}")
