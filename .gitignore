@@ -1,0 +1,7 @@
+wheels/
+data/
+testingData/
+*.exe
+*.msix
+.agents/
+.claude/
